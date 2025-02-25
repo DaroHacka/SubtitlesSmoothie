@@ -8,11 +8,11 @@ fi
 
 # Define output file path
 youtube_url="$1"
-output_file="/home/.../SRT/ready/$2" # Paste your own directory here for example output_file="/home/user/tools/SubtitlesSmoothie/SRT/ready/$2".. The two provided files must be placed here. Leave /SRT/ready/$2
+output_file="/home/.../SRT/ready/$2" # Paste your own directory here for example output_file="/home/user/tools/SubtitlesSmoothie/SRT/ready/$2".. The two provided files must be placed here. Leave /SRT/ready/$2 as is
 
 # Download the VTT file using yt-dlp
 echo "Downloading subtitles..."
-yt_dlp_output=$(yt-dlp --skip-download --write-auto-sub --output "/home/.../SRT/%(title)s.%(ext)s" "$youtube_url" 2>&1) #removed --sublang en but you can include it - place your own directory here as well 
+yt_dlp_output=$(yt-dlp --skip-download --write-auto-sub --output "/home/.../SRT/%(title)s.%(ext)s" "$youtube_url" 2>&1) # add --sublang en (or any other language) if needed - place your own directory here as well 
 # echo "$yt_dlp_output"  # Debug: Print the yt-dlp command output (delete the initial # if you need debugging)
 
 # Extract the input file path
@@ -40,7 +40,7 @@ if [ ! -f "$input_file" ]; then
 fi
 
 # Create the output directory if it doesn't exist
-mkdir -p /home/.../SRT/ready # place your own directory here but leave /SRT/ready at the end which is where the file will be saved 
+mkdir -p /home/.../SRT/ready # place your own directory here but leave /SRT/ready at the end where the file will be saved 
 
 # Run the Python script to remove duplicate lines
 python3 srt_fix.py "$input_file" "$input_file"
