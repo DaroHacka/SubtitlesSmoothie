@@ -19,4 +19,4 @@ These are the steps taken by SubtitlesSmoothie
 3. A Python script (`srt_fix.py`) removes duplicate lines, numbers, and timestamps.
 4. Finally, `sed` and `tr` commands format the subtitles into a continuous block of text.
 
-This streamlined process ensures you get clean, readable subtitles quickly and efficiently that you can use in your articles, research, thesis, notes, emails, and more.
+This streamlined process ensures that you quickly and efficiently receive clean, readable subtitles formatted as regular text, suitable for use in your articles, research, thesis, notes, emails, and more.
