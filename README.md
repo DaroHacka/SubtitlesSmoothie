@@ -5,7 +5,7 @@ download youtube captions in a readable format
 
 I created SubtitlesSmoothie to easily download subtitles from YouTube videos using Linux Terminal. The tool converts them into a readable format without time codes, numbers, or segmentation. The process is simple and works in a few steps: 
 
-prerequisits: To use SubtitlesSmoothie, you need to have both yt-dlp and ffmpeg installed on your system. 
+prerequisites: To use SubtitlesSmoothie, you need to have both yt-dlp and ffmpeg installed on your system. 
 run sudo apt-get install yt-dlp and sudo apt-get install ffmpeg
 
 
