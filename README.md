@@ -10,7 +10,8 @@ run sudo apt-get install yt-dlp and sudo apt-get install ffmpeg
 
 
 1. Place the two files into a directory of your choice and insert the path into the provided code as indicated by the # comments
-2. Launch the program by typing `./SubtitlesSmoothie.sh youtube_link name_of_the_file_as_you_want_to_save_it`.
+2. Make the script executable by running the following command: chmod +x SubtitlesSmoothie.sh
+3. Launch the program by typing `./SubtitlesSmoothie.sh youtube_link name_of_the_file_as_you_want_to_save_it`.
 
 These are the steps taken by SubtitlesSmoothie
 1. yt-dlp downloads the subtitles in the `.vtt` format.
